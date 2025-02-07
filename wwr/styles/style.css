@@ -1,5 +1,8 @@
 body {
     background-color: cornsilk;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
 }
 #content {
     max-width: 1600px;
@@ -9,6 +12,9 @@ header {
     background-color: darkolivegreen;
     color: cornsilk;
 }
+#logo_link {
+    padding-top: 5px;
+}
 .logo {
     width: 80px;
     border-radius: 45%;
@@ -17,6 +23,8 @@ nav a {
     text-align: center;
     color: cornsilk;
     text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 35px;
 }
 nav a:hover {
     background-color: rgb(119, 147, 71);
@@ -30,15 +38,35 @@ nav a:hover {
 }
 .home-title {
     color: rgb(66, 31, 5);
+    font-size: 2em;
+    margin-top: 10px;
 }
 .home-grid h2 {
     color: rgb(66, 31, 5);
 }
+main section img {
+    box-sizing: border-box;
+}
+.rivers-card, .camping-card, .rapids-card{
+    margin: 200px 0;
+}
+.card-img {
+    border: 10px solid rgb(66, 31, 5);
+}
 .icon {
     width: 80px;
+    padding-top: 10px;
+}
+h2 {
+    margin: 0;
+}
+
+h1, h2{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 h4 {
     color: rgb(66, 31, 5);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .button-box {
     text-align: center;
@@ -47,6 +75,11 @@ h4 {
     background-color: cornsilk;
     color: rgb(66, 31, 5);
     text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 .book:hover, .join:hover {
     background-color: darkolivegreen;
@@ -62,27 +95,38 @@ main section {
 .msg {
     background-color: cornsilk;
     color: rgb(66, 31, 5);
+    line-height: 1.5em;
+    padding: 35px;
 }
 .msg h2 {
     color: rgb(66, 31, 5);
 }
 .msg p {
     color: rgb(66, 31, 5);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: .8em;
+    padding-bottom: 15px;
 }
 footer {
     background-color: darkolivegreen;
     color: cornsilk;
+    margin-top: 200px;
 }
 footer a {
     color: cornsilk;
     text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 footer a:hover {
     color: rgb(119, 147, 71);
 }
 footer p {
-    font-size: 1.2em;
+    font-size: .9em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 footer p a:hover {
     text-decoration: underline;
+}
+footer .social img {
+    padding-top: 15px;
 }
