@@ -4,24 +4,24 @@ Fonts are separated by a | */
 @import url('https://fonts.googleapis.com/css?family=SATISFY+REGULAR+POIRET+ONE+REGULAR+HANDLEE');
 :root {
   /* change the values below to your colors from your palette */
-  --primary-color: #333333   ;
-  --secondary-color: #48e5c2 ;
-  --accent1-color: #fcfaf9;
-  --accent2-color: #f3d3bd;
-  --accent3-color: #5e5e5e;
+  --primary-color: #fcfaf9;
+  --secondary-color: #5e5e5e;
+  --accent1-color: #f3d3bd;
+  --accent2-color: #333333;
+  --accent3-color: #48e5c2;
 
   /* change the values below to your chosen font(s) */
   --heading-font: "Poiret One";
   --paragraph-font: "Handlee",serif, Helvetica, sans-serif;
 
   /* these colors below should be chosen from among your palette colors above */
-  --headline-color-on-white: #396E94;  /* headlines on a white background */ 
-  --headline-color-on-color: white; /* headlines on a colored background */ 
-  --paragraph-color-on-white: #396E94; /* paragraph text on a white background */ 
-  --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
-  --paragraph-background-color: #396E94  ;
-  --nav-link-color: #396E94;
-  --nav-background-color: #D4AC0D;
+  --headline-color-on-white: #48e5c2;  /* headlines on a white background */ 
+  --headline-color-on-color: #fcfaf9; /* headlines on a colored background */ 
+  --paragraph-color-on-white: #333333; /* paragraph text on a white background */ 
+  --paragraph-color-on-color: #fcfaf9; /* paragraph text on a colored background */ 
+  --paragraph-background-color: #5e5e5e  ;
+  --nav-link-color: #5e5e5e;
+  --nav-background-color: #f3d3bd;
   --nav-hover-link-color: white;
   --nav-hover-background-color: #396E94;
 }
