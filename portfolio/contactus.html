@@ -8,15 +8,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Poiret+One&family=Satisfy&display=swap" rel="stylesheet">
     <style>
         body {
             text-align: center;
+        }
+        header {
+            background-color: #333333;
+        }
+        .logo {
+            width: 6em;
+            padding: 5px;
+        }
+        nav {
+            background-color: #333333;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
+        nav a {
+            color: #fcfaf9;
+            text-align: center;
+            text-decoration: none;
+            font-family: "Poiret One", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         }
         form {
             display: inline-block;
             padding: 1em;
             border: 1px solid #ccc;
             border-radius: 1em;
+            background-color: #48e5c2;
+            margin: 4em;
         }
         p + p {
             margin-top: 1em;
@@ -25,15 +49,17 @@
             display: inline-block;
             min-width: 90px;
             text-align: center;
+            font-family: "Poiret One", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: bold;
         }
         input, textarea {
             font: 1em sans-serif;
             box-sizing: border-box;
-            border: 1px solid #999;
+            border: 1px solid #333333;
         }
         input:focus, textarea:focus {
             outline-style: solid;
-            outline-color: #000;
+            outline-color: #333333;
         }
         textarea {
             vertical-align: top;
@@ -51,9 +77,11 @@
         }
         button {
             margin-left: 0.5em;
+            font-family: "Poiret One", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: bold;
         }
         #feedback {
-            background-color: cornsilk;
+            background-color: #48e5c2;
             position: absolute;
             top: 0;
             left: 0;
@@ -64,18 +92,43 @@
         .moveDown {
             margin-top: 3em;
         }
-    </style>
+        footer {
+            background-color: #333333;
+            color: #fcfaf9;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        footer a {
+            color: #fcfaf9;
+            text-decoration: none;
+            font-family: 'Poiret One','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        footer a:hover {
+            color: #48e5c2;
+        }
+        footer p {
+            font-size: .9em;
+            font-family: 'Poiret One', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        footer p a:hover {
+            text-decoration: underline;
+        }
+        footer .social img {
+            padding-top: 15px;
+            </style>
+        }
 </head>
 <body>
     <div id="content">
         <header>
             <a id="logo_link" href="index.html">
-                <img class="logo" src="images/rapidrider.png" alt="Rapid Rider Adventures Logo">
+                <img class="logo" src="images/puregraphixlogo.png" alt="Pure Graphix Logo">
             </a>
             <nav>
                 <a href="index.html">Home</a>
-                <a href="rates.html">Rates/Dates</a>
-                <a href="site-plan-rafting.html">Site Plan</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="about.html">About</a>
                 <a href="contactus.html">Contact Us</a>
             </nav>
         </header>
@@ -121,10 +174,11 @@
         const formElement = document.forms[0];
         formElement.addEventListener('submit', function(e) {
             e.preventDefault();
-            feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+            feedbackElement.innerHTML = 'Hello'+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
             feedbackElement.style.display = "block";
             document.body.classList.toggle('moveDown');
         });
     </script>
+    
 </body>
 </html>
