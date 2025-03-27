@@ -3,19 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style/styles.css">
     <title>About Me</title>
 </head>
 <body>
-    <header>
-    </header>
-    <main>
+    <header></header>
+    <main id="main-grid">
         <h1>About Me</h1>
-        <img alt="Image of my family and I on Halloween 2024" src="images/leefam.JPG" width="250" height="350">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1/5</div>
+                <img class="img1.jpg" src="images/bnk.jpg" style="width: 100%" alt="My husband Bryan and I">
+                <div class="text">Bryan and Kristen</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">2/5</div>
+                <img class="img2.jpg" src="images/jax.jpg" style="width: 100%" alt="My son Jaxon">
+                <div class="text">Jaxon</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">3/5</div>
+                <img class="img3.jpg" src="images/jacey.jpg" style="width: 100%" alt="My daughter Jacey">
+                <div class="text">Jacey</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">4/5</div>
+                <img class="img4.jpg" src="images/rey.jpg" style="width: 100%" alt="My daughter Rey">
+                <div class="text">Rey</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">5/5</div>
+                <img class="img5.jpg" src="images/parker.jpg" style="width: 100%" alt="My daughter Parker">
+                <div class="text">Parker</div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        <div class="dots" style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
         <h2>Kristen Lee</h2>
         <p>Hey there everyone! I have been married to my husband Bryan for almost 14 years and we have 4 amazing kids. I currently live in Baton Rouge, LA. We moved here 2 years ago from Orlando, FL and like it just fine, but miss all the fun things there are to do in FL.</p>
         <p>I am pursuing a degree in graphic design and web development and hope to be able to use those skills to create a business to make and sell downloadable content. I love to craft, spend time with my family, watch movies, and play games with my husband and kids.</p>
-        <p>I am a homemaker and have been a member of the Church all my life. I love BYU-I because Christ is present in every class no matter the subject. I love that I get spiritual messages and connections to what I am learning everyday! I am taking this class to learn a new skill that can potentially help me grow a business. An added bonus is that my kids have shown interest in this subject, so I can pass my knowledge onto them :)</p>
+        <p>I am a homemaker and have been a member of the Church all my life. I love BYU-I because Christ is present in every class no matter the subject. I love that I get spiritual messages and connections to what I am learning every day! I am taking this class to learn a new skill that can potentially help me grow a business. An added bonus is that my kids have shown interest in this subject, so I can pass my knowledge onto them :)</p>
     </main>
     <footer></footer>
-</body> 
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}
+          slides[slideIndex-1].style.display = "block";
+          setTimeout(showSlides, 3000); // Change image every 3 seconds
+        }
+
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+    </script>
+</body>
 </html>
